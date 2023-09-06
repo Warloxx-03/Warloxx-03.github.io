@@ -1,0 +1,171 @@
+html,body,li,ul,img,form,h1,h2,h3,h4,h5,h6,hr{ margin:0px; padding:0px; }
+
+@font-face {
+    font-family: 'Valorant';
+    src: url(font/Valorant\ Font.ttf) format('truetype');
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+body { 
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px
+}
+
+.valorant{
+    font-family: 'Valorant';
+    color: #ffffff;
+    text-align: center;
+    font-size: 1000%;
+    text-shadow: 4px 4px black;
+    
+}
+
+.container{
+    position: relative;
+    text-align: center;
+}
+
+.desciption{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.desciption_text{
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  color: white;
+}
+
+.description_style {
+  background-color: #000;
+  box-shadow: #000;
+}
+
+.heading_text{
+  font-size: 60px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  color: rgb(12, 12, 12);
+  
+}
+
+.heading_text_pos{
+  position: absolute;
+  left: 10%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  
+  }
+  
+  .container2{
+    opacity: 1;
+  }
+
+  .container2:hover .image {
+    opacity: 0.1;
+  }
+  
+  .container2:hover .middle {
+    opacity: 1;
+    border-color: black;
+    border-radius: 20%;
+  }
+
+
+  .outer {
+    margin: 50px;
+  }
+
+  
+  .button {
+
+    border: 1px solid #0f1923;
+    border-radius: 3px;
+    width: 300px;
+    height: 50px;
+    outline: none;
+
+  
+    background: linear-gradient(to right, #0f1923 50%, #ff4655 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-position: left bottom;
+  }
+  
+  .text {
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 50px; 
+    color: white;
+    transition: all .6s ease-out;
+    display: block;
+  }
+
+
+.container3 {
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #ff4655;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
